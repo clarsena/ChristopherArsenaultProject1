@@ -1,0 +1,9 @@
+li::before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+li:nth-child(1)::before {
+    content: '\fa0292';
+}
