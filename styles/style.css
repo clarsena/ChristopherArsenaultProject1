@@ -91,6 +91,7 @@ img {
 
 .wrapper {
     max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -140,6 +141,10 @@ header.headerContact {
     padding: 10px 35px 10px 0;
     font-size: 14px;
     text-transform: uppercase;
+}
+
+.siteNav ul:last-child li:first-child {
+    padding-left: 7%;
 }
 
 .siteNav ul i {
@@ -273,7 +278,7 @@ header.headerContact {
 .benefits {
     background-image: url('../assets/home-4.jpeg');
     background-size: cover;
-    padding: 22vh 50px 20vh 0;
+    padding: 220px 50px 200px 0;
 }
 
 .benefitsLeft,
@@ -304,7 +309,7 @@ header.headerContact {
     border: 2px solid #000000;
     border-radius: 50%;
     font-size: 3.0rem;
-    margin: 0 30px 30px 0;
+    margin: 0 30px 100px 0;
     width: 70px;
     height: 70px;
     text-align: center;
@@ -393,7 +398,7 @@ header.headerContact {
 .dropLineLeft {
     background-color: #C3DAB7;
     height: 100%;
-    padding: 325px 0;
+    padding: 30vh 0;
 }
 
 .dropLineRight {
@@ -833,7 +838,94 @@ footer h2 {
     min-height: 80vh;
 }
 
-
 /* END OF CONTACT DETAILS SECTION STYLING */
 
 /* END OF CONTACT PAGE STYLING */
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1270px) {
+
+    .benefits {
+        padding-right: 0;
+    }
+    .benefitsLeft {
+        display: none;
+    }
+
+    .benefitsRight {
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .benefits ul {
+        width: calc( 50% - 25px);
+    }
+
+    .team,
+    .blogPost,
+    .relatedPosts,
+    .readComments,
+    .postComments,
+    .contactDetails,
+    .contactForm,
+    footer .wrapper {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1180px) {
+
+    .siteNav h1 {
+        width: 35%;
+    }
+
+    .siteNav ul {
+        width: 32.5%;
+    }
+
+    .siteNav ul:last-child li:first-child,
+    .siteNav ul:first-child li:first-child {
+        padding-left: 10%;
+    }
+
+    .teamContainer.large {
+        width: 100%;
+    }
+
+    .teamContainer.small {
+        margin: 0 0 20px 0;
+        width: calc( (100% / 3) - 20px);
+    }
+
+    .teamContainer.small:nth-of-type(3n+3) {
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+
+    .teamContainer img {
+        width: 100%;
+    }
+
+    .teamContainer:last-child {
+        padding: 12.25% 50px;
+    }
+}
+
+@media (max-width: 1025px) {
+
+    .footerContainer.middle ul {
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 895px) {
+
+    
+    .siteNav ul:last-child li:first-child,
+    .siteNav ul:first-child li:first-child {
+        padding-left: 0;
+    }
+}
