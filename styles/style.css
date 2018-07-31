@@ -85,26 +85,22 @@ img {
 header {
     height: 105vh;
     background-size: cover;
-    background-repeat: no-repeat;
     padding-top: 25px;
     position: relative;
 }
 
 header.headerMain {
-    background-image: url('../assets/home-1.jpeg');
-    background-position: top;
+    background: url('../assets/home-1.jpeg') top;
 }
 
 header.headerBlog {
-    background-image: url('../assets/blog-1.jpeg');
-    
+    background-image: url('../assets/blog-1.jpeg');    
 }
 
 header.headerContact {
-    background-image: #FFFFFF url('../assets/contact-1.jpeg'); 
+    background: #FFFFFF url('../assets/contact-1.jpeg') bottom center; 
+    background-repeat: no-repeat;
     height: 35vh;
-    background-size: auto;
-    background-position: bottom center;
 }
 
 .siteNav ul {
