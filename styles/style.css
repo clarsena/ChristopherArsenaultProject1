@@ -91,10 +91,12 @@ header {
 
 header.headerMain {
     background: url('../assets/home-1.jpeg') top;
+    background-attachment: fixed;
 }
 
 header.headerBlog {
-    background-image: url('../assets/blog-1.jpeg');    
+    background-image: url('../assets/blog-1.jpeg');   
+    background-attachment: fixed; 
 }
 
 header.headerContact {
@@ -678,7 +680,7 @@ footer h2 {
     border-color: #000000;
 }
 
-.submissionForm input:focus::-moz-placeholder, .submissionForm textarea:focus::-moz-placeholder {
+.submissionForm input:focus::-moz-placeholder, .submissionForm textarea:focus::-moz-placeholder, .subscribeEmail:focus::-moz-placeholder {
     color: #000000;
     opacity: 1;
     font-weight: 600;
