@@ -36,37 +36,20 @@ body {
     font-size: 1.6rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul {
+h1, h2, h3, h4, h5, h6, ul {
     margin: 0;
     padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-button,
-a {
+h1, h2, h3, h4, h5, h6, ul, button, a {
     font-family: "Montserrat", sans-serif;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
     text-transform: uppercase;
 }
 
-h2,
-h3 {
+h2, h3 {
     font-weight: 200;
     letter-spacing: 2px;
     margin-bottom: 10px;
@@ -102,34 +85,32 @@ img {
 header {
     height: 105vh;
     background-size: cover;
+    background-repeat: no-repeat;
     padding-top: 25px;
     position: relative;
 }
 
 header.headerMain {
-    background: url('../assets/home-1.jpeg');
+    background-image: url('../assets/home-1.jpeg');
     background-position: top;
 }
 
 header.headerBlog {
-    background: url('../assets/blog-1.jpeg');
-    background-repeat: no-repeat;
+    background-image: url('../assets/blog-1.jpeg');
+    
 }
 
 header.headerContact {
-    background: #FFFFFF url('../assets/contact-1.jpeg'); 
+    background-image: #FFFFFF url('../assets/contact-1.jpeg'); 
     height: 35vh;
     background-size: auto;
     background-position: bottom center;
-    background-repeat: no-repeat;
 }
 
 .siteNav ul {
     width: 25%;
 }
-.siteNav ul:first-child,
-.siteNav ul li,
-.siteNav h1 {
+.siteNav ul:first-child, .siteNav ul li, .siteNav h1 {
     float: left;
 }
 
@@ -239,8 +220,7 @@ header.headerContact {
     position: relative;
 }
 
-.galleryContainer img,
-.blogPostInfoBlock img {
+.galleryContainer img, .blogPostInfoBlock img {
     border-radius: 50%;
 }
 
@@ -278,7 +258,8 @@ header.headerContact {
 .benefits {
     background-image: url('../assets/home-4.jpeg');
     background-size: cover;
-    padding: 220px 0 200px 0;
+    background-repeat: no-repeat;
+    padding: 220px 0 50px 0;
 }
 
 .benefitsContainer {
@@ -324,7 +305,7 @@ header.headerContact {
 /* START OF TEAM SECTION STYLING */
 
 .team {
-    padding: 15vh 0;
+    padding: 150px 0;
     position: relative;
 }
 
@@ -350,8 +331,7 @@ header.headerContact {
     max-height: 270px;
 }
 
-.teamContainer:nth-of-type(3),
-.teamContainer:last-child {
+.teamContainer:nth-of-type(3), .teamContainer:last-child {
     margin-right: 0;
 }
 
@@ -375,36 +355,24 @@ header.headerContact {
     padding: 113px 50px;
 }
 
-.teamContainer:last-child:hover {
-    background-color: #C3DAB7;
-    color: #FFFFFF;
-}
-
 /* END OF TEAM SECTION STYLING */
 
 /* START OF DROP US A LINE SECTION STYLING */
 
 .dropLine {
-    clear:both;
+    clear: both;
     height: 100vh;
-}
-
-.dropLineLeft,
-.dropLineRight {
-    width: 50%;
-    float: left;
+    background-image: url('../assets/home-10.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right center;
 }
 
 .dropLineLeft {
     background-color: #C3DAB7;
+    width: 50%;
     height: 100%;
-    padding: 30vh 0;
-}
-
-.dropLineRight {
-    background-image: url('../assets/home-10.jpeg');
-    background-size: cover;
-    height: 100%;
+    padding: 15% 0;
 }
 
 .dropLineText {
@@ -415,6 +383,7 @@ header.headerContact {
 
 .dropLineText h3 {
     font-size: 2.4rem;
+    font-weight: 400;
 }
 
 .dropLineText p {
@@ -605,9 +574,7 @@ footer h2 {
     margin-bottom: 100px;
 }
 
-.relatedPosts h2,
-.readComments h2,
-.postComments h2 {
+.relatedPosts h2, .readComments h2, .postComments h2 {
     font-size: 3.0rem;
     font-weight: 600;
     padding-bottom: 25px;
@@ -637,8 +604,7 @@ footer h2 {
     margin-bottom: 100px;
 }
 
-.commentAvatar,
-.commentContent {
+.commentAvatar, .commentContent {
     float: left;
 }
 
@@ -705,28 +671,24 @@ footer h2 {
     margin-bottom: 150px;
 }
 
-.submissionForm input,
-.submissionForm textarea {
+.submissionForm input, .submissionForm textarea {
     border: none;
     border-bottom: 1px solid #E1E1E1;
     font-size: 1.4rem;
     color: #000000;
 }
 
-.submissionForm input:focus,
-.submissionForm textarea:focus {
+.submissionForm input:focus, .submissionForm textarea:focus {
     border-color: #000000;
 }
 
-.submissionForm input:focus::-moz-placeholder,
-.submissionForm textarea:focus::-moz-placeholder {
+.submissionForm input:focus::-moz-placeholder, .submissionForm textarea:focus::-moz-placeholder {
     color: #000000;
     opacity: 1;
     font-weight: 600;
 }
 
-.submissionForm input[type="text"],
-.submissionForm input[type="email"] {
+.submissionForm input[type="text"], .submissionForm input[type="email"] {
     width: calc( (100% / 3) - ( 70px / 3) );
     float: left;
     padding-bottom: 10px;
@@ -781,8 +743,7 @@ footer h2 {
     top: -250px;
 }
 
-.contactDetails h3,
-.contactForm h3 {
+.contactDetails h3, .contactForm h3 {
     font-size: 1.8rem;
     font-weight: 600; 
     margin-bottom: 35px;
@@ -792,8 +753,7 @@ footer h2 {
     line-height: 1.5rem;
 }
 
-.contactDetails .wrapper > p,
-.contactForm .wrapper > p {
+.contactDetails .wrapper > p, .contactForm .wrapper > p {
     font-size: 1.4rem;
 }
 
@@ -847,6 +807,10 @@ footer h2 {
 
 @media (max-width: 1650px) {
 
+    .benefits {
+        background-size: 100% 100%;
+    }
+
     .benefitsContainer {
         padding-left: 5%;
     }
@@ -865,38 +829,21 @@ footer h2 {
 
 @media (max-width: 1270px) {
 
+    .benefits {
+        background-size: auto;
+        padding: 150px 0 0 0;
+    }
+
     .benefitsContainer {
         width: 100%;
         padding: 0 50px;
         float: none;
     }
 
-    .team,
-    .blogPost,
-    .relatedPosts,
-    .readComments,
-    .postComments,
-    .contactDetails,
-    .contactForm,
+    .team, .blogPost, .relatedPosts, .readComments, .postComments, .contactDetails, .contactForm,
     footer .wrapper {
         padding-left: 50px;
         padding-right: 50px;
-    }
-}
-
-@media (max-width: 1180px) {
-
-    .siteNav h1 {
-        width: 35%;
-    }
-
-    .siteNav ul {
-        width: 32.5%;
-    }
-
-    .siteNav ul:last-child li:first-child,
-    .siteNav ul:first-child li:first-child {
-        padding-left: 10%;
     }
 
     .teamContainer.large {
@@ -918,8 +865,24 @@ footer h2 {
     }
 
     .teamContainer:last-child {
-        padding: 12.25% 50px;
+        padding: 10.5% 50px;
     }
+}
+
+@media (max-width: 1180px) {
+
+    .siteNav h1 {
+        width: 35%;
+    }
+
+    .siteNav ul {
+        width: 32.5%;
+    }
+
+    .siteNav ul:last-child li:first-child, .siteNav ul:first-child li:first-child {
+        padding-left: 10%;
+    }
+
 }
 
 @media (max-width: 1025px) {
@@ -931,8 +894,7 @@ footer h2 {
 
 @media (max-width: 895px) {
     
-    .siteNav ul:last-child li:first-child,
-    .siteNav ul:first-child li:first-child {
+    .siteNav ul:last-child li:first-child, .siteNav ul:first-child li:first-child {
         padding-left: 0;
     }
 }
